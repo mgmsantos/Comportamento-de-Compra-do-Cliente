@@ -49,7 +49,6 @@ df[['age', 'age_group']]
 # %%
 
 # Criação da coluna de frequência de compras em dias ('purchase_frequency_days').
-# CORREÇÃO: Mapeamento de 'Every 3 months' corrigido para 'Every 3 Months' e 'Every 3 months'
 # para garantir que todos os valores sejam mapeados corretamente, permitindo o .astype(int)
 frequency_mapping = {
     'Fortnightly': 14,
