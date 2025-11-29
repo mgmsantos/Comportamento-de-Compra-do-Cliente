@@ -1,5 +1,7 @@
 # %%
+# !pip install psycopg2-binary sqlalchemy
 import pandas as pd
+from sqlalchemy import create_engine
 
 # %%
 
@@ -113,3 +115,38 @@ category_cols = [
     'payment_method', 'frequency_of_purchases', 'region', 'age_group'
 ]
 df[category_cols] = df[category_cols].astype('category')
+
+# %%
+
+# %%
+
+# CONEXÃO COM POSTGRESQL (CÓDIGO CORRIGIDO)
+
+# É necessário importar create_engine do SQLAlchemy e a função quote_plus
+# para codificar caracteres especiais na senha.
+from sqlalchemy import create_engine
+from urllib.parse import quote_plus
+
+username = "your_username"
+password_raw = "your_password"
+
+# A senha é codificada para que o '@' não seja interpretado como separador de host
+password_encoded = quote_plus(password_raw)
+
+host = "localhost" ## verificar
+port = "5432" # verificar
+database = "customer_behavior"
+
+# A string de conexão usa a senha codificada
+engine = create_engine(f"postgresql+psycopg2://{username}:{password_encoded}@{host}:{port}/{database}")
+
+# carregar o df no postgresql
+
+table_name = "customer"
+# NOTA: O DataFrame 'df' deve estar carregado na sua sessão antes de executar esta célula.
+# Assume-se que 'df' é o DataFrame final limpo.
+try:
+    df.to_sql(table_name, engine, if_exists = 'replace', index = False)
+    print(f"Carregamento de dados na tabela feito com sucesso: '{table_name}' in '{database}'.")
+except Exception as e:
+    print(f"Erro ao carregar dados: {e}")
