@@ -162,7 +162,7 @@ df[category_cols] = df[category_cols].astype('category')
 
 # Conexão com o PostGreeSQL
 
-# É necessário que o database ('customer_behavior') já tenha sido criado no seu servidor PostgreSQL
+# É necessário que o database ('customer_behavior') já tenha sido criado no servidor do PostgreSQL
 
 # Configuração das credenciais do banco de dados
 username = "your_username" # Substitua pelo seu nome de usuário do PostgreSQL
