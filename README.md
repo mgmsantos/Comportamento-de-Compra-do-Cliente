@@ -14,6 +14,11 @@
 
 ---
 
+## Tratamento dos dados
+
+
+---
+
 ## Conecte-se Comigo
 
 *Siga os links abaixo para saber mais sobre minha trajetória profissional e me contatar:*
