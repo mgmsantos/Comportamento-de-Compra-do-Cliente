@@ -195,3 +195,9 @@ except Exception as e:
     print(f"Erro ao carregar dados: {e}")
 
 # O objeto 'engine' será automaticamente fechado quando sair do escopo ou pela finalização do script/notebook
+
+# %%
+
+# Caso for interessante salvar o df atualizado
+
+# df.to_excel("customer_shoppping_behavior_att.xlsx", index = False)

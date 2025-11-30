@@ -1,8 +1,12 @@
 # Comportamento de compra do cliente
 
 ## Visão Geral do Projeto
-Esse projeto representa um fluxo de trabalho completo de análise de dados, desenvolvido para simular responsabilidades reais
-de analistas em ambientes corporativos. O projeto passa por todas as etapas em análise de dados: preparação dos dados, criação de features, conexão entre plataformas e geração de insights por meio de consultas, visualização e relatórios.
+Esse projeto representa um fluxo de trabalho completo de análise de dados, desenvolvido para simular responsabilidades reais de analistas em ambientes corporativos. O projeto passa por todas as etapas em análise de dados: preparação dos dados, criação de features, conexão entre plataformas e geração de insights por meio de consultas, visualização e relatórios.
+
+---
+
+## Sobre o dataset
+O conjunto possui dados sobre hábitos de consumo de clientes em um comérico varejista do setor de moda: roupas e acessórios. O conjunto foi projetado visando realizar análises que possibilitem visualizar como diversos fatores influenciam decisões de compra, permitindo modelar o comportamento dos clientes e guiar decisões de negócio de forma estratégica e orientada por dados.
 
 ---
 
@@ -33,4 +37,4 @@ de analistas em ambientes corporativos. O projeto passa por todas as etapas em a
 
 ## Próximos passos e contribuições
 
-Sinta-se à vontade para favoritar esse repositório com uma estrela e promor melhorias, abrir *issues* ou enviar *pull requests*!
+Sinta-se à vontade para *favoritar* esse repositório com uma estrela e promor melhorias, abrir *issues* ou enviar *pull requests*!

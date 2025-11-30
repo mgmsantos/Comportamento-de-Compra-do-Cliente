@@ -94,7 +94,7 @@ GROUP BY customer_segment
 ORDER BY count_customers ASC;
 
 -- 08. Qual o top 3 produtos mais comprados em cada categoria?
--- 08. Whare are the top 3 most products purchased within each category?
+-- 08. What are the top 3 most products purchased within each category?
 
 WITH item_counts AS(
 SELECT
@@ -124,7 +124,7 @@ WHERE previous_purchases > 5
 GROUP BY subscription_status;
 
 -- 10. Qual a porcentagem de participação na receita gerada por cada grupo de idade?
--- 10. What is the participation percentage revenue contribution of each age group?
+-- 10. What's the participation percentage revenue contribution of each age group?
 
 SELECT * FROM customer;
 
@@ -170,3 +170,46 @@ SELECT
 	*
 FROM season_purchase
 WHERE item_rank <= 3;
+
+-- 14. Qual o item mais comprado em cada estação e a sua cor mais popular?
+-- 14. What's the most purchased product in each season and its most popular color?
+
+WITH most_popular AS(
+SELECT
+	item_purchased,
+	season,
+	color,
+	COUNT(customer_id) AS count_sales,
+	ROW_NUMBER() OVER(PARTITION BY (season) ORDER BY COUNT(customer_id) DESC) AS popular_rank
+FROM customer
+GROUP BY item_purchased, season, color
+)
+SELECT
+    item_purchased,
+    color,
+	count_sales
+FROM most_popular
+WHERE popular_rank = 1;
+
+-- 15. Qual o tamanho mais comprado de cada categoria por faixa etária?
+-- 15. What's the most purchased size in each category by age group ?
+
+WITH size_age AS(
+SELECT
+	category,
+	size,
+	age_group,
+	COUNT(customer_id),
+	ROW_NUMBER() OVER(PARTITION BY (category, age_group) ORDER BY COUNT(customer_id) DESC) AS popular_size_age
+FROM customer
+GROUP BY category, size, age_group
+)
+SELECT
+	age_group,
+	category,
+	size
+FROM size_age
+WHERE popular_size_age = 1
+ORDER BY age_group;
+
+----------------------------------------
