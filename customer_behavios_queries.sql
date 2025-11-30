@@ -21,5 +21,51 @@ WHERE discount_applied = 'yes'
 			AVG(purchase_amount) AS avg_purchase_amount
 		FROM customer
 		);
-	
-	
+
+-- 03. Qual o top 5 produtos com a média de taxa de revisão mais alta?
+-- 03. Which are the top 5 products with the highest average review rating?
+
+SELECT
+	item_purchased,
+	ROUND(AVG(review_rating::numeric), 2) AS avg_review_rating
+FROM customer
+GROUP BY item_purchased
+ORDER BY avg_review_rating DESC
+LIMIT 5;
+
+-- 04. Qual a diferença dos valores médios de compra entre os fretes padrão e expresso?
+-- 04. What is the difference in average purchase values ​​between standard and express shipping?
+
+SELECT * FROM customer;
+
+SELECT
+	shipping_type,
+	ROUND(AVG(purchase_amount), 2) AS avg_purchase_amount
+FROM customer
+WHERE shipping_type IN ('standard', 'express')
+GROUP BY shipping_type;
+
+-- 05. Clientes inscritos gastam mais? Qual a diferença da média do valor médio de compra entre inscritos e não-inscritos?
+-- 05. Do registered customers spend more? What is the difference in average purchase value between registered and non-registered customers?
+
+SELECT
+	subscription_status,
+	COUNT(customer_id) AS total_customers,
+	ROUND(AVG(purchase_amount), 2) AS avg_spend,
+	ROUND(SUM(purchase_amount), 2) AS total_revenue
+FROM customer
+GROUP BY subscription_status
+ORDER BY total_revenue, avg_spend DESC;
+
+-- 06. Quais os 5 produtos possuem a maior porcentagem de vendas com aplicação de desconto ?
+-- 06. Which 5 products have the highest percentage of purchases with discount applied ?
+
+SELECT
+	item_purchased,
+	ROUND(100 * SUM(CASE WHEN discount_applied = 'yes' THEN 1 ELSE 0 END) / COUNT(*), 2) AS percentage
+FROM customer
+GROUP BY item_purchased
+ORDER BY percentage DESC
+LIMIT 5;
+
+
