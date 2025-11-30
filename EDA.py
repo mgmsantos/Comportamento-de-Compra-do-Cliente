@@ -1,3 +1,8 @@
+## Autor: Miguel Santos
+## Data: 2025-11-30
+
+#################################################
+
 # -*- coding: utf-8 -*-
 # %%
 # Instalando e carregando bibliotecas necessárias
