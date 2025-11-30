@@ -30,3 +30,7 @@ de analistas em ambientes corporativos. O projeto passa por todas as etapas em a
 </div>
 
 ---
+
+## Próximos passos e contribuições
+
+Sinta-se à vontade para favoritar esse repositório com uma estrela e promor melhorias, abrir *issues* ou enviar *pull requests*!
