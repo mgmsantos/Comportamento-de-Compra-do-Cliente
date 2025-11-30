@@ -1,8 +1,8 @@
 # Comportamento de compra do cliente
 
 ## Visão Geral do Projeto
-
-
+Esse projeto representa um fluxo de trabalho completo de análise de dados, desenvolvido para simular responsabilidades reais
+de analistas em ambientes corporativos. O projeto passa por todas as etapas em análise de dados: preparação dos dados, criação de features, conexão entre plataformas e geração de insights por meio de consultas, visualização e relatórios.
 
 ---
 
