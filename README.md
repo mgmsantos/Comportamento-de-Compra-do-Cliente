@@ -34,7 +34,7 @@ Observação: há dados faltantes na coluna "Review Rating".
 
 ## Dashboard em Power BI
 
-![dashboard_pbi](/dashboard_pbi.jpg)
+<img title="dashboard_png" alt="Alt text" src="/dashboard_pbi_jpg.jpg">
 
 ---
 
