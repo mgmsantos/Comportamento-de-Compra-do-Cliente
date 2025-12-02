@@ -33,6 +33,7 @@ Observação: há dados faltantes na coluna "Review Rating".
 ---
 
 ## Dashboard em Power BI
+Na figura abaixo é possível visualizar o dashboard interativo confeccionado no Power BI visando apresentar insights de forma visual:
 
 <img title="dashboard_png" alt="Alt text" src="/dashboard_pbi_png.png">
 
