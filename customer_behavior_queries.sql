@@ -126,8 +126,6 @@ GROUP BY subscription_status;
 -- 10. Qual a porcentagem de participação na receita gerada por cada grupo de idade?
 -- 10. What's the participation percentage revenue contribution of each age group?
 
-SELECT * FROM customer;
-
 SELECT
 	age_group,
 	SUM(purchase_amount) AS total_revenue,
@@ -152,6 +150,23 @@ SELECT
 	*
 FROM region_rank
 WHERE location_rank <= 3;
+
+-- 11. Qual o método de pagamento preferido em funçao da faixa etaria?
+-- 11. What is the preferred payment method depending on the age group?
+
+WITH payment_rank AS(
+SELECT
+	age_group,
+	payment_method,
+	ROW_NUMBER() OVER(PARTITION BY age_group ORDER BY COUNT(payment_method) DESC) AS payment_method_rank
+FROM customer
+GROUP BY age_group, payment_method
+)
+SELECT
+	age_group,
+	payment_method AS payment_method_preferred
+FROM payment_rank
+WHERE payment_method_rank = 1;
 
 -- 13. Qual o top 3 item mais vendido de cada categoria em cada estação?
 -- 13. Which top 3 item more purchased by each category and each season?
