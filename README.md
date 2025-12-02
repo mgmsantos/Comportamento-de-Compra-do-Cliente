@@ -8,28 +8,28 @@ Esse projeto representa um fluxo de trabalho completo de análise de dados, dese
 ## Sobre o dataset
 O conjunto possui dados sobre hábitos de consumo de clientes em um comérico varejista do setor de moda: roupas e acessórios. O conjunto foi projetado visando realizar análises que possibilitem visualizar como diversos fatores influenciam decisões de compra, permitindo modelar o comportamento dos clientes e guiar decisões de negócio de forma estratégica e orientada por dados.
 O dataset possui 3.900 linhas e 18 colunas, apresentando features, como:
-- Customer demographics: `age`, `gender`, `location`, etc;
-- Purchase details: `item purchased`, `category`, `purchase amount`, `season`, etc;
-- Shopping behavior: `discout applied`, `promo code used`, `previous purchased`, `review rating`, etc.
+- **Customer demographics:** `age`, `gender`, `location`, etc;
+- **Purchase details:** `item purchased`, `category`, `purchase amount`, `season`, etc;
+- **Shopping behavior:** `discout applied`, `promo code used`, `previous purchased`, `review rating`, etc.
 
 Observação: há dados faltantes na coluna "Review Rating".
 
 ---
 
 ## Stack Técnico
-- Sistem Operacional: Windows 10
-- Software: VS Code | PostgreSQL | Power BI
-- Linguagem: Python | SQL
-- Bibliotecas: `pandas`
+- **Sistem Operacional:** Windows 10
+- **Software:** VS Code | PostgreSQL | Power BI
+- **Linguagem:** Python | SQL
+- **Bibliotecas:** `pandas`
 
 ---
 
 ## Tratamento e Análise Exploratória dos Dados com Python
 
-- Padronização de colunas: renomeção de colunas para **snake case** ("por_exemplo") para melhor legibilidade e execução das consultas;
-- Tratamento de dados faltantes: checagem de valores faltantes e imputaçao de dados na coluna ``Review Rating`` usando a mediana das avaliações de acordo com a categoria dos protudos;
-- Criação de novas features: agrupamento das idades dos clientes (age_group) e criação da coluna "purchase_frequency_days" a partir da frequência de compras;
-- Integração com PostgreSQL: conexão Python-PostgreSQL com a função ``create_engine`` da biblioteca ``SQLAlchemy``.
+- **Padronização de colunas:** renomeção de colunas para **snake case** ("por_exemplo") para melhor legibilidade e execução das consultas;
+- **Tratamento de dados faltantes:** checagem de valores faltantes e imputaçao de dados na coluna ``Review Rating`` usando a mediana das avaliações de acordo com a categoria dos protudos;
+- **Criação de novas features:** agrupamento das idades dos clientes (age_group) e criação da coluna "purchase_frequency_days" a partir da frequência de compras;
+- **Integração com PostgreSQL:** conexão Python-PostgreSQL com a função ``create_engine`` da biblioteca ``SQLAlchemy``.
 ---
 
 ## Análises de Dados com SQL (Business Intelligence)
