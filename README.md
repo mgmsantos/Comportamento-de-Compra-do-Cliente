@@ -26,6 +26,10 @@ Observação: há dados faltantes na coluna "Review Rating".
 
 ## Tratamento e Análise Exploratória dos Dados com Python
 
+- Padronização de colunas: renomeção de colunas para **snake case** ("por_exemplo") para melhor legibilidade e execução das consultas;
+- Tratamento de dados faltantes: checagem de valores faltantes e imputaçao de dados na coluna ``Review Rating`` usando a mediana das avaliações de acordo com a categoria dos protudos;
+- Criação de novas features: agrupamento das idades dos clientes (age_group) e criação da coluna "purchase_frequency_days" a partir da frequência de compras;
+- Integração com PostgreSQL: conexão Python-PostgreSQL com a função ``create_engine`` da biblioteca ``SQLAlchemy``.
 ---
 
 ## Análises de Dados com SQL (Business Intelligence)
@@ -33,9 +37,13 @@ Observação: há dados faltantes na coluna "Review Rating".
 ---
 
 ## Dashboard em Power BI
-Na figura abaixo é possível visualizar o dashboard interativo confeccionado no Power BI visando apresentar insights de forma visual:
+Na figura abaixo é possível visualizar o dashboard interativo confeccionado no Power BI, visando apresentar insights de forma visual:
 
 <img title="dashboard_png" alt="Alt text" src="/dashboard_pbi_png.png">
+
+---
+
+## Conclusão e Recomendações
 
 ---
 
