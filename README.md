@@ -28,7 +28,7 @@ Observação: há dados faltantes na coluna "Review Rating".
 
 ---
 
-## Análises de Dados (Business Intelligence) com SQL
+## Análises de Dados com SQL (Business Intelligence)
 
 ---
 
