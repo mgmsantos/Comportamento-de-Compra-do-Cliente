@@ -37,6 +37,47 @@ Observação: há dados faltantes na coluna "Review Rating".
 
 ## Análises de Dados com SQL (Business Intelligence)
 
+### Resumo Executivo: Principais Insights
+
+- **Público Principal:** os grupos Young Adult (26.7%) e Middle-aged (25.4%) possuem particição de 52.1% na receita total;
+
+- **Satisfação do cliente:** o produto ``gloves`` possui a melhor avaliação geral, indicando maior satisfação do cliente;
+
+- **Lealdade do cliente:** a base de clientes é predominantemente fiel, com 79.9% dos clientes com mais de 10 compras anteriores
+
+- **Frete e Valor:** a modalidade ``2-day-shipping`` e ``express`` atraem compras com ticket médio superior às outras formas de envio
+
+### I. Impacto Financeiro e Clientes de Alto Valor
+
+**Objetivo:** analisar a distribuição de receita e o perfil dos clientes mais valiosos.
+
+- **Dominância Etária:** a maior parte da receita (52.1%) é impulsionada pelos grupos ``Young Adult`` e ``Middle-aged``. Campanhas de marketing de alto valor devem ser direcionadas a esse segmento;
+
+- **Eficiência do desconto:**
+
+- **Eficiência da inscrição:** clientes inscritos e não inscritos possuem ticket médio de compra similar, contudo os não inscritos representam 73.1% da receita total e 92.7% dos clientes. É preciso investigar o motivo dos clientes não adquirirem a inscrição.
+
+
+### II. Performance dos Produtos e Tendências Sazonais
+
+**Objetivo:** focalizar quais produtos devem ser priorizados visando realizar o planejamento do estoque, assim como *merchandising*.
+
+- **Qualidade e satisfação:** os produtos lideres em satisfação pelo cliente são ``gloves``, ``sandals`` e ``boots``, contudo se encontram com pontução menor que 4;
+
+- **Visão sazonal:** os itens e cores ``hat peach``, ```shorts yellow``, ``scarf violet`` e ``sunglasses olive`` são os produtos mais adquiridos no outro, primavera, verão e inverno, respectivamente.
+
+- **Efeito do desconto:** os produtos que mais dependem de desconto para fechar as vendas são: ``hat``, ``sneakers``, ``coat``, ``sweater`` e ``pants``, indicando que a margem pode ser mais apertada para esses itens.
+
+### III. Fidelidade e Eficiência
+
+**Objetivo:** analisar a saúde da base de clientes e a otimização de serviços de entrega e pagamento.
+
+- **Segmentação de lealdade:** a base de clientes é majoritariamente classificada como ``Loyal``, com uma participação de 79.9%, validando as estratégias de retenção.
+
+- **Métodos de pagamento:** o método de pagamento preferido corresponde a: ``Adult``: ``venmo``; ``Middle-aged``: ``paypal``; ``Senior``: ``credit card`` e ``Young Adult``: ``cash``.
+
+- **Distribuição de receita:** o hotspot de receita para cada região está em: ``Illinois``, ``Nova York``, ``Alabama`` e ``Montana`` para Midweast, Northeast, South e West respectivamnete.
+
 ---
 
 ## Dashboard em Power BI
