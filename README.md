@@ -78,7 +78,7 @@ Observação: há dados faltantes na coluna "Review Rating".
 
 - **Distribuição de receita:** o hotspot de receita para cada região está em: ``Illinois``, ``Nova York``, ``Alabama`` e ``Montana`` para Midweast, Northeast, South e West respectivamnete.
 
---
+---
 
 ## Dashboard em Power BI
 Na figura abaixo é possível visualizar o dashboard interativo confeccionado no Power BI, visando apresentar insights de forma visual:
@@ -125,8 +125,6 @@ O projeto demonstrou que a empresa possui uma **sólida base de clientes fiéis 
   <a href="http://lattes.cnpq.br/2943203054995050" target="_blank"><img src="https://img.shields.io/badge/-Lattes-%230077B5?style=for-the-badge&logo=google-scholar&logoColor=white" target="_blank"></a>
 </div>
 
----
-
-## Próximos passos e contribuições
-
 Sinta-se à vontade para *favoritar* esse repositório com uma estrela e promor melhorias, abrir *issues* ou enviar *pull requests*!
+
+---
