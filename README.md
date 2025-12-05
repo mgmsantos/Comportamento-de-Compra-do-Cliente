@@ -8,19 +8,19 @@ Esse projeto representa um fluxo de trabalho completo de análise de dados, dese
 ## Sobre o dataset
 O conjunto possui dados sobre hábitos de consumo de clientes em um comérico varejista do setor de moda: roupas e acessórios. O conjunto foi projetado visando realizar análises que possibilitem visualizar como diversos fatores influenciam decisões de compra, permitindo modelar o comportamento dos clientes e guiar decisões de negócio de forma estratégica e orientada por dados.
 O dataset possui 3.900 linhas e 18 colunas, apresentando features, como:
-- **Customer demographics:** `age`, `gender`, `location`, etc;
-- **Purchase details:** `item purchased`, `category`, `purchase amount`, `season`, etc;
-- **Shopping behavior:** `discout applied`, `promo code used`, `previous purchased`, `review rating`, etc.
+- **Demografia dos clientes:** ``age``, ``gender``, ``location``, etc;
+- **Detalhes de compra:** ``item purchased``, ``category``, ``purchase amount``, ``season``, etc;
+- **Comportamento de compra:** ``discout applied``, ``promo code used``, ``previous purchased``, ``review rating``, etc.
 
 Observação: há dados faltantes na coluna "Review Rating".
 
 ---
 
 ## Stack Técnico
-- **Sistem Operacional:** Windows 10
+- **Sistema Operacional:** Windows 10
 - **Software:** VS Code | PostgreSQL | Power BI
 - **Linguagem:** Python | SQL
-- **Bibliotecas:** `pandas`
+- **Bibliotecas:** ``pandas``
 
 ---
 
@@ -39,21 +39,19 @@ Observação: há dados faltantes na coluna "Review Rating".
 
 ### Resumo Executivo: Principais Insights
 
-- **Público Principal:** os grupos Young Adult (26.7%) e Middle-aged (25.4%) possuem particição de 52.1% na receita total;
+- **Público Principal:** os grupos Young Adult (26.7%) e Middle-aged (25.4%) possuem participação de 52.1% na receita total.
 
-- **Satisfação do cliente:** o produto ``gloves`` possui a melhor avaliação geral, indicando maior satisfação do cliente;
+- **Satisfação do cliente:** o produto ``gloves`` possui a melhor avaliação geral, indicando maior satisfação do cliente.
 
-- **Lealdade do cliente:** a base de clientes é predominantemente fiel, com 79.9% dos clientes com mais de 10 compras anteriores
+- **Lealdade do cliente:** a base de clientes é predominantemente fiel, com 79.9% dos clientes com mais de 10 compras anteriores.
 
-- **Frete e Valor:** a modalidade ``2-day-shipping`` e ``express`` atraem compras com ticket médio superior às outras formas de envio
+- **Frete e Valor:** a modalidade ``2-day-shipping`` e ``express`` atraem compras com ticket médio superior às outras formas de envio.
 
 ### I. Impacto Financeiro e Clientes de Alto Valor
 
 **Objetivo:** analisar a distribuição de receita e o perfil dos clientes mais valiosos.
 
-- **Dominância Etária:** a maior parte da receita (52.1%) é impulsionada pelos grupos ``Young Adult`` e ``Middle-aged``. Campanhas de marketing de alto valor devem ser direcionadas a esse segmento;
-
-- **Eficiência do desconto:**
+- **Dominância Etária:** a maior parte da receita (52.1%) é impulsionada pelos grupos ``Young Adult`` e ``Middle-aged``. Campanhas de marketing de alto valor devem ser direcionadas a esse segmento.
 
 - **Eficiência da inscrição:** clientes inscritos e não inscritos possuem ticket médio de compra similar, contudo os não inscritos representam 73.1% da receita total e 92.7% dos clientes. É preciso investigar o motivo dos clientes não adquirirem a inscrição.
 
@@ -62,7 +60,7 @@ Observação: há dados faltantes na coluna "Review Rating".
 
 **Objetivo:** focalizar quais produtos devem ser priorizados visando realizar o planejamento do estoque, assim como *merchandising*.
 
-- **Qualidade e satisfação:** os produtos lideres em satisfação pelo cliente são ``gloves``, ``sandals`` e ``boots``, contudo se encontram com pontução menor que 4;
+- **Qualidade e satisfação:** os produtos líderes em satisfação pelo cliente são ``gloves``, ``sandals`` e ``boots``, contudo se encontram com pontução menor que 4;
 
 - **Visão sazonal:** os itens e cores ``hat peach``, ```shorts yellow``, ``scarf violet`` e ``sunglasses olive`` são os produtos mais adquiridos no outro, primavera, verão e inverno, respectivamente.
 
@@ -76,7 +74,7 @@ Observação: há dados faltantes na coluna "Review Rating".
 
 - **Métodos de pagamento:** o método de pagamento preferido corresponde a: ``Adult``: ``venmo``; ``Middle-aged``: ``paypal``; ``Senior``: ``credit card`` e ``Young Adult``: ``cash``.
 
-- **Distribuição de receita:** o hotspot de receita para cada região está em: ``Illinois``, ``Nova York``, ``Alabama`` e ``Montana`` para Midweast, Northeast, South e West respectivamnete.
+- **Distribuição de receita:** o hotspot de receita para cada região está em: ``Illinois``, ``Nova York``, ``Alabama`` e ``Montana`` para Midweast, Northeast, South e West respectivamente.
 
 ---
 
@@ -89,11 +87,7 @@ Na figura abaixo é possível visualizar o dashboard interativo confeccionado no
 
 ## Conclusão e Recomendações
 
-A análise dos dados demonstrou que a empresa possui uma **sólida base de clientes fiéis e recorrentes**, contudo enfrenta desafios em duas questões: **monetização de lealdade** e **otimização operacional**.
-
-## Conclusão e Recomendações
-
-O projeto demonstrou que a empresa possui uma **sólida base de clientes fiéis (79.9%)**, mas enfrenta desafios em duas frentes: **monetização da lealdade** e **otimização operacional**.
+A análise dos dados demonstrou que a empresa possui uma **sólida base de clientes fiéis (79.9%)**, mas enfrenta desafios em duas frentes: **monetização da lealdade** e **otimização operacional**.
 
 ### Estratégias Recomendadas:
 
