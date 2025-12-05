@@ -78,7 +78,7 @@ Observação: há dados faltantes na coluna "Review Rating".
 
 - **Distribuição de receita:** o hotspot de receita para cada região está em: ``Illinois``, ``Nova York``, ``Alabama`` e ``Montana`` para Midweast, Northeast, South e West respectivamnete.
 
----
+--
 
 ## Dashboard em Power BI
 Na figura abaixo é possível visualizar o dashboard interativo confeccionado no Power BI, visando apresentar insights de forma visual:
@@ -88,6 +88,30 @@ Na figura abaixo é possível visualizar o dashboard interativo confeccionado no
 ---
 
 ## Conclusão e Recomendações
+
+A análise dos dados demonstrou que a empresa possui uma **sólida base de clientes fiéis e recorrentes**, contudo enfrenta desafios em duas questões: **monetização de lealdade** e **otimização operacional**.
+
+## Conclusão e Recomendações
+
+O projeto demonstrou que a empresa possui uma **sólida base de clientes fiéis (79.9%)**, mas enfrenta desafios em duas frentes: **monetização da lealdade** e **otimização operacional**.
+
+### Estratégias Recomendadas:
+
+#### 1. Foco em Monetização e LTV (Valor de Vida do Cliente)
+
+* **Programa de Assinaturas:** Apesar da alta fidelidade (79.9%), a baixa adesão à assinatura é uma oportunidade perdida. **Recomendação:** Criar ofertas exclusivas para a classe de clientes ``Loyal``, vinculando benefícios de frete (ex: Frete Expresso Gratuito) à adesão, convertendo fidelidade em receita recorrente.
+
+* **Segmentação de Ticket:** Direcionar a introdução de produtos de alto valor aos grupos **Young Adult** e **Middle-aged**, que demonstram ser o *hotspot* de faturamento (52.1% da receita).
+
+#### 2. Otimização da Margem e Qualidade de Produto
+
+* **Análise de Desconto:** Redefinir as campanhas de desconto para itens de alta dependência (``hat``, ``sneakers``, ``coat``). **Recomendação:** Migrar descontos diretos para ofertas de pacote de produtos ou brindes, protegendo a margem de itens essenciais.
+
+* **Capitalizar a Satisfação:** Utilizar os produtos de alta avaliação (``gloves``, ``sandals``, ``boots``) em promoções de aquisição de novos clientes ou para venda de produto superior, alavancando a confiança inicial.
+
+#### 3. Excelência Operacional e Logística
+
+* **Investimento em Frete e Satisfação do Cliente:** A modalidade ``2-day-shipping`` e ``Express`` atrai compras de maior valor. **Recomendação:** Auditar a performance dos parceiros de frete para essas modalidades nas regiões de maior receita (``Illinois``, ``Montana``), garantindo que o serviço de alta qualidade justifique o gasto superior do cliente.
 
 ---
 
